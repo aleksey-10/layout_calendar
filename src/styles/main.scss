@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 $cell-size: 100px;
 
 body {
@@ -35,12 +37,6 @@ body {
     }
   }
 
-  @mixin set-current-day($current-day) {
-    > div:first-child {
-      margin-left: $current-day * 100px - 100px + $current-day * 1px - 1px;
-    }
-  }
-
   &-mon {
     @include set-current-day(1);
   }
@@ -67,17 +63,6 @@ body {
 
   &-sun {
     @include set-current-day(7);
-  }
-
-  @mixin set-days-amount($amount) {
-    @for $i from 1 through $amount {
-      > div:nth-child(#{$i}) {
-        display: flex;
-        &::after {
-          content: "#{$i}";
-        }
-      }
-    }
   }
 
   &-28 {

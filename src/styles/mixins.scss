@@ -1,0 +1,16 @@
+@mixin set-current-day($current-day) {
+  > div:first-child {
+    margin-left: $current-day * 100px - 100px + $current-day * 1px - 1px;
+  }
+}
+
+@mixin set-days-amount($amount) {
+  @for $i from 1 through $amount {
+    > div:nth-child(#{$i}) {
+      display: flex;
+      &::after {
+        content: "#{$i}";
+      }
+    }
+  }
+}
