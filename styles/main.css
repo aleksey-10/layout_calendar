@@ -36,9 +36,7 @@ body {
     .calendar > div:hover {
       -webkit-transform: translateY(-20px);
               transform: translateY(-20px);
-      background-color: pink;
-      -webkit-transition: all 0.25s;
-      transition: all 0.25s; }
+      background-color: pink; }
   .calendar-mon > div:first-child {
     margin-left: 0px; }
   .calendar-tue > div:first-child {
