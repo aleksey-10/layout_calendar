@@ -5,11 +5,11 @@
 }
 
 @mixin set-days-amount($amount) {
-  @for $i from 1 through $amount {
-    > div:nth-child(#{$i}) {
+  @for $j from 1 through $amount {
+    > div:nth-child(#{$j}) {
       display: flex;
       &::after {
-        content: "#{$i}";
+        content: "#{$j}";
       }
     }
   }

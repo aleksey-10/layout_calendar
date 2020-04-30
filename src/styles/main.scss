@@ -64,19 +64,9 @@ body {
     @include set-current-day(7);
   }
 
-  &-28 {
-    @include set-days-amount(28);
-  }
-
-  &-29 {
-    @include set-days-amount(29);
-  }
-
-  &-30 {
-    @include set-days-amount(30);
-  }
-
-  &-31 {
-    @include set-days-amount(31);
+  @for $i from 28 through 31 {
+    &-#{$i} {
+      @include set-days-amount($i);
+    }
   }
 }
