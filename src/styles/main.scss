@@ -20,12 +20,11 @@ body {
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, $cell-size);
-  gap: 1px 1px;
+  gap: 1px;
   justify-content: center;
 
   div {
     display: flex;
-    flex: 0 0 $cell-size;
     justify-content: center;
     align-items: center;
 
