@@ -38,19 +38,19 @@ body {
               transform: translateY(-20px);
       background-color: pink; }
   .calendar-mon div:first-child {
-    grid-column-start: 0; }
-  .calendar-tue div:first-child {
     grid-column-start: 1; }
-  .calendar-wed div:first-child {
+  .calendar-tue div:first-child {
     grid-column-start: 2; }
-  .calendar-thu div:first-child {
+  .calendar-wed div:first-child {
     grid-column-start: 3; }
-  .calendar-fri div:first-child {
+  .calendar-thu div:first-child {
     grid-column-start: 4; }
-  .calendar-sat div:first-child {
+  .calendar-fri div:first-child {
     grid-column-start: 5; }
-  .calendar-sun div:first-child {
+  .calendar-sat div:first-child {
     grid-column-start: 6; }
+  .calendar-sun div:first-child {
+    grid-column-start: 7; }
   .calendar div:nth-child(1)::after {
     content: "1"; }
   .calendar div:nth-child(2)::after {
