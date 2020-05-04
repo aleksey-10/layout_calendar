@@ -6,13 +6,12 @@ body {
           box-sizing: border-box; }
 
 .calendar {
-  margin: 0 auto;
-  width: 707px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+  gap: 1px 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .calendar div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -28,7 +27,6 @@ body {
             align-items: center;
     height: 100px;
     border: 1px double black;
-    margin: 1px 1px 0 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     background-color: #eee;
@@ -40,19 +38,19 @@ body {
               transform: translateY(-20px);
       background-color: pink; }
   .calendar-mon div:first-child {
-    margin-left: 0px; }
+    grid-column-start: 0; }
   .calendar-tue div:first-child {
-    margin-left: 101px; }
+    grid-column-start: 1; }
   .calendar-wed div:first-child {
-    margin-left: 202px; }
+    grid-column-start: 2; }
   .calendar-thu div:first-child {
-    margin-left: 303px; }
+    grid-column-start: 3; }
   .calendar-fri div:first-child {
-    margin-left: 404px; }
+    grid-column-start: 4; }
   .calendar-sat div:first-child {
-    margin-left: 505px; }
+    grid-column-start: 5; }
   .calendar-sun div:first-child {
-    margin-left: 606px; }
+    grid-column-start: 6; }
   .calendar div:nth-child(1)::after {
     content: "1"; }
   .calendar div:nth-child(2)::after {
